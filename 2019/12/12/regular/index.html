@@ -6,14 +6,35 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | Hexo</title>
+  <title>正则表达式 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
+  <meta name="description" content="一、正则定义及语法1、元字符分类      1）基本元字符         . 匹配除了换行符之外的任意单个字符             \ 将下一个字符标记为一个特殊字符、元义字符、转义符，例如：b匹配字母’b’，’\b’    匹配单词边界，’\\’匹配’\’，’\(‘匹配’(’             |  逻辑或操作符         []   定义一个字符集合，匹配字符集合里的一个字符，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、正则定义及语法1、元字符分类      1）基本元字符         . 匹配除了换行符之外的任意单个字符             \ 将下一个字符标记为一个特殊字符、元义字符、转义符，例如：b匹配字母’b’，’\b’    匹配单词边界，’\\’匹配’\’，’\(‘匹配’(’             |  逻辑或操作符         []   定义一个字符集合，匹配字符集合里的一个字符，">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular1.jpeg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular2.jpeg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular6.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular7.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular9.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular10.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular11.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular12.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular13.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular14.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular16.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular20.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular17.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular18.png">
+<meta property="og:updated_time" content="2019-12-19T06:54:09.667Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;regular&#x2F;regular1.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -145,76 +166,355 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-regular" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      正则表达式
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/12/regular/" class="archive-article-date">
+
+        
+        <a href="/2019/12/12/regular/" class="archive-article-date">
   	<time datetime="2019-12-12T08:05:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/12/regular/">正则表达式</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、正则定义及语法"><a href="#一、正则定义及语法" class="headerlink" title="一、正则定义及语法"></a>一、正则定义及语法</h2><pre><code>1、元字符分类
 
-        <div class="article-info info-on-right">
-          
-          
+    1）基本元字符
+        . 匹配除了换行符之外的任意单个字符
+            \ 将下一个字符标记为一个特殊字符、元义字符、转义符，例如：b匹配字母’b’，’\b’    匹配单词边界，’\\’匹配’\’，’\(‘匹配’(’
+            |  逻辑或操作符
+        []   定义一个字符集合，匹配字符集合里的一个字符，在字符集合中.\这些字符表示其本身，例如：/^1[35789]\d{9}/
+        [^]  对上一个集合取非
 
+    2）数量元字符
+        {m,n}匹配前面一个字符至少m次,至多重复n次,还有{m}表示m次，{m,}表示至少m次
+        + 匹配前面一个表达式一次或者多次
+        * 匹配前面一个表达式零次或者多次
+        ? 单独使用匹配前面一个表达式零次或者一次，相当于{0,1}
+
+    3）位置元字符
+        ^单独使用匹配表达式的开始
+        \$ 匹配表达式的结束
+        \b 匹配单词边界
+        \B匹配非单词边界
+        (?=p)自身出现的位置的后面能匹配表达式p
+        (?&lt;=p)自身出现的位置的前面能匹配表达式p
+        (?!p)自身出现的位置的后面不能匹配表达式p
+        (?&lt;!p)自身出现的位置的前面不能匹配表达式p
+
+    4）特殊元字符
+        \d: [0-9],表示一位数字
+        \D: [^0-9],表示一位非数字
+        \s: 表示空白符，包括空格,水平制表符(\t),垂直制表符(\v),换行符(\n), 回车符(\r)换页符(\f)
+        \S: 非空白字符
+        \w: 表示数字字母下划线或汉字
+        \W: \w取反
+
+    5）标志字符
+        g 全局搜索
+        I 忽略大小写
+        m多行搜索</code></pre><hr>
+<h2 id="二、正则匹配"><a href="#二、正则匹配" class="headerlink" title="二、正则匹配"></a>二、正则匹配</h2><pre><code>1、分组及引用
+    如果重复单个字符，后面跟限定符就可以，若是匹配多个字符，就用到了分组，分组又称为子表达式。例子：不分组/abc{2}/, 分组/ (abc){2}/。
+
+    1）引用分组
+        我们可以用分组进行数据提取和替换，需要配合api实现，接下来看个例子：</code></pre><center><img src="/2019/12/12/regular/regular1.jpeg" style="zoom:50%;" align="center"></center>
+
+<pre><code>2）反向引用
+    分组往往和反向引用一起使用，每个分组都被赋予一个组号。</code></pre><center><img src="/2019/12/12/regular/regular2.jpeg" style="zoom:50%;" align="center"></center>
+
+<pre><code>2、贪婪懒惰
+    正则表达式默认会匹配贪婪模式，也就是说匹配尽可能长的字符串，例如：/\d{3,6}/ ,对于一个字符串’12345678’来说，匹配的结果是’123456’ ，看下下面的例子：</code></pre><center><img src="/2019/12/12/regular/regular3.png" align="center"></center>
+
+<pre><code>但是有时候我们需要懒惰匹配，也就是匹配尽可能少的字符，只需要在限定符的后面加一个?，像.*?就意味着在能使整个匹配成功的前提下使用最少的重复，所以上面的例子如果转化成懒惰匹配示例如下：</code></pre><center><img src="/2019/12/12/regular/regular4.png" align="center"></center>
+
+
+<pre><code>3、零宽断言和负向零宽断言
+
+    之前我们在介绍位置元字符的时候，说到了\b ，^，$，如果我们想匹配符合一定位置条件的内容呢？ 比如，某些内容前面或者后面的字符，这个时候就用到了零宽断言
+
+    1）(?=exp)也叫零宽度正预测先行断言，它断言自身出现的位置后面能匹配表达式exp，比如：\b\w+(?=ing\b)，匹配以ing结尾的单词的前面部分内容
+
+例如：let   str = ‘reading a book’;            
+    let  reg = /\b\w+(?=ing\b)/;            
+    str.match(reg)         // read    
+
+     2） (?&lt;=exp)  也叫零宽度正回顾后发断言，它断言自身出现的位置的前面能匹配表达式exp。
+    举个栗子：
+    let  reg = /(?&lt;=\bre)\w+\b/    let str = ‘reading a book’
+    str.match(reg)            // ading
+
+    断言用来声明一个应该为真的事实。正则表达式中只有当断言为真时才会继续进行匹配。
+
+    3）零宽度负预测先行断言(?!exp)，断言此位置的后面不能匹配表达式exp。
+    例如：\d{3}(?!\d)匹配三位数字，而且这三位数字的后面不能是数字；\b((?!abc)\w)+\b匹配不包含连续字符串abc的单词。
+
+    4）同理，我们可以用(?&lt;!exp),零宽度负回顾后发断言来断言此位置的前面不能匹配表达式exp：(?&lt;![a-z])\d{7}匹配前面不是小写字母的七位数字。
+
+4、正则表达式匹配---回溯法原理
+
+研究匹配原理时，有两个字出现的频率比较高：“回溯”
+回溯法也称试探法，它的基本思想是：从问题的某一种状态（初始状态）出发，搜索从这种状态出发所能达到的所有“状态”，当一条路走到“尽头”的时候（不能再前进），再后退一步或若干步，从另一种可能“状态”出发，继续搜索，直到所有的“路径”（状态）都试探过。这种不断“前进”、不断“回溯”寻找解的方法，就称作“回溯法”。本质上就是深度优先搜索算法。其中退到之前的某一步这一过程，我们称为“回溯”。从上面的描述过程中，可以看出，路走不通时，就会发生“回溯”。即，尝试匹配失败时，接下来的一步通常就是回溯。
+
+接下来扔几个栗子看下：
+
+1）没有回溯的匹配
+    假设我们的正则是/ab{1,3}c/，其可视化形式是：</code></pre><center><img src="/2019/12/12/regular/regular5.png" align="center"></center>
+
+<pre><code>当目标字符串是“abbbc”时，就没有所谓的“回溯”，匹配过程是：</code></pre><center><img src="/2019/12/12/regular/regular6.png" align="center"></center>
+
+<pre><code>2）有回溯的匹配
+如果目标字符串是“abbc”，中间就有回溯。正则仍然用/ab{1,3}c/，匹配过程：</code></pre><center><img src="/2019/12/12/regular/regular7.png" align="center"></center>
+
+<pre><code>图中第5步有红颜色，表示匹配不成功。此时b{1,3}已经匹配到了2个字符“b”，准备尝试第三个时，结果发现接下来的字符是“c”。那么就认为b{1,3}就已经匹配完毕。然后状态又回到之前的状态（即第6步，与第4步一样），最后再用子表达式c，去匹配字符“c”。当然，此时整个表达式匹配成功了。图中的第6步，就是“回溯”
+
+看个清晰的回溯，正则是：/ab{1,3}bbc/，目标字符串是&quot;abbbc”，看下匹配过程：</code></pre><center><img src="/2019/12/12/regular/regular9.png" align="center" style="zoom:50%;"></center>
+
+<pre><code>复杂的例子：</code></pre><center><img src="/2019/12/12/regular/regular10.png" align="center" style="zoom:50%;"></center>    
+
+<pre><code>3）常见的回溯形式
+
+a、贪婪量词
+比如b{1,3}，因为其是贪婪的，尝试可能的顺序是从多往少的方向去尝试。首先会尝试&quot;bbb&quot;，然后再看整个正则是否能匹配。不能匹配时，吐出一个&quot;b&quot;，即在&quot;bb&quot;的基础上，再继续尝试。如果还不行，再吐出一个，再试。如果还不行呢？只能说明匹配失败了。
+此时我们不禁会问，如果当多个贪婪量词挨着存在，并相互有冲突时，此时会是怎样？
+答案是，先下手为强！因为深度优先搜索。测试如下：
+let string = &quot;12345&quot;; 
+let regex = /(\d{1,3})(\d{1,3})/; 
+string.match(regex)
+// =&gt; [&quot;12345&quot;, &quot;123&quot;, &quot;45&quot;, index: 0, input: &quot;12345&quot;]
+
+b、惰性量词
+虽然惰性量词不贪，但也会有回溯的现象。目标字符串是&quot;12345&quot;，比如正则是：</code></pre><center><img src="/2019/12/12/regular/regular11.png" align="center" style="zoom:80%;"></center>    
+    匹配过程：
+<center><img src="/2019/12/12/regular/regular12.png" align="center" style="zoom:80%;"></center>
+
+<pre><code>c、分支结构
+我们知道分支也是惰性的，比如/can|candy/，去匹配字符串&quot;candy&quot;，得到的结果是&quot;can&quot;，因为分支会一个一个尝试，如果前面的满足了，后面就不会再试验了。
+分支结构，可能前面的子模式会形成了局部匹配，如果接下来表达式整体不匹配时，仍会继续尝试剩下的分支。这种尝试也可以看成一种回溯。
+上面第5步，虽然没有回到之前的状态，但仍然回到了分支结构，尝试下一种可能。所以，可以认为它是一种回溯的。</code></pre><center><img src="/2019/12/12/regular/regular13.png" align="center" style="zoom:80%;"></center>
+<center><img src="/2019/12/12/regular/regular14.png" align="center" style="zoom:80%;"></center>
+
+<p><strong>简单总结就是，正因为有多种可能，所以要一个一个试。直到，要么到某一步时，整体匹配成功了；要么最后都试完后，发现整体匹配不成功。<br>贪婪量词“试”的策略是：买衣服砍价。价钱太高了，便宜点，不行，再便宜点。<br>惰性量词“试”的策略是：卖东西加价。给少了，再多给点行不，还有点少啊，再给点。<br>分支结构“试”的策略是：货比三家。这家不行，换一家吧，还不行，再换。</strong></p>
+<pre><code>5、正则匹配原理---DFA与NFA引擎（JS的正则引擎是NFA：非确定型有限自动机）
+有穷自动机（Finite Automate）是用来模拟实物系统的数学模型，它包括如下五个部分：
+1）有穷状态集States
+2）输入字符集Input symbols
+3）转移函数Transitions
+4）起始状态Start state
+5）接受状态Accepting state(s)(终止状态)</code></pre><center><img src="/2019/12/12/regular/regular16.png" align="center" style="zoom:80%;"></center>
+
+<pre><code>可以看到，该自动机包含四个状态（有限状态）q0, q1, q2, q3，两个输入字符a, b，转移函数如图所示，起始状态为q0，接受状态为q3。
+
+有穷自动机，按照转移函数的不同，又可分为确定型有穷自动机（Determinism Finite Automate, DFA），与非确定型有穷自动机（Non-determinism Finite Automate, NFA）。
+
+举例简单说明NFA与DFA工作的区别：
+对于字符串tonight，正则为： /to(nite|knite|night) / </code></pre><center><img src="/2019/12/12/regular/regular20.png" align="center"></center>
+
+<pre><code>DFA引擎：在线性时状态下执行，不要求回溯（因此永远不测试相同的字符两次），确保匹配最长的可能的字符串。因为只包含有限的状态，所以它不能匹配具有反向引用的模式，并且因为它不构造显示扩展，所以它不可以捕获子表达式
+传统的NFA引擎：运行匹配回溯算法——以指定顺序测试正则表达式的所有可能的扩展并接受第一个匹配项。因为传统的 NFA 构造正则表达式的特定扩展以获得成功的匹配，所以它可以捕获子表达式匹配和匹配的反向引用。但传统 NFA的 回溯使它可以访问完全相同的状态多次（如果通过不同的路径到达该状态）。因此，在最坏情况下，它的执行速度可能非常慢。因为传统的 NFA 接受它找到的第一个匹配，所以它还可能会导致其他（可能更长）匹配未被发现</code></pre><center><img src="/2019/12/12/regular/regular17.png" align="center"></center>
+
+<hr>
+<h2 id="三、正则实战"><a href="#三、正则实战" class="headerlink" title="三、正则实战"></a>三、正则实战</h2><pre><code>1）银行卡号（16或19位）
+    let reg = /^([1-9]{1})(\d{15}|\d{18})$/
+
+2）手机号(宽松)
+    let reg = /^((\+|00)86)?1[3-9]\d{9}$/
+
+3）手机号（严谨）
+    let reg = /^((\+|00)86)?1((3[\d])|(4[5,6,7,9])|(5[0-3,5-9])|(6[5-7])|(7[0-8])|(8[\d])|(9[1,8,9]))\d{8}$/
+
+4）身份证 
+    let reg = /(^\d{8}(0\d|10|11|12)([0-2]\d|30|31)\d{3}$)|(^\d{6}(18|19|20)\d{2}(0\d|10|11|12)([0-2]\d|30|31)\d{3}(\d|X|x)$)/
+
+5）邮箱
+let reg = /^[a-zA-Z0-9.!#$%&amp;&apos;*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ 
+
+6）URL
+    let reg= /^((https?|ftp|file):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?$/;
+
+7）密码强度正则，最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符
+    let reg = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&amp;*? ]).*$/
+
+8）日期
+    let reg = /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[1-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/; </code></pre><hr>
+<h2 id="四、正则相关的方法"><a href="#四、正则相关的方法" class="headerlink" title="四、正则相关的方法"></a>四、正则相关的方法</h2><pre><code>1）match
+    a、定义和用法
+    match() 方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。它返回指定的值，而不是字符串的位置。
+    b、语法
+    stringObject.match(searchvalue)      //规定要检索的字符串值
+    stringObject.match(regexp)            //规定要匹配的模式的 RegExp 对象。如果该参数不是 RegExp 对象，则需要首先把它传递给 RegExp 构造函数，将其转换为 RegExp 对象。</code></pre><center><img src="/2019/12/12/regular/regular18.png" align="center"></center>
+
+<pre><code>2）search
+    a、定义和用法
+    search() 方法用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。如果传入一个非正则表达式对象 obj，则会使用 new RegExp(obj) 隐式地将其转换为正则表达式对象
+    b、语法
+    stringObject.search(regexp)
+    search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置,要执行忽略大小写的检索，请追加标志 i。
+    c、返回值
+    如果查找不到，返回-1，查找的到，返回第一个与 regexp 相匹配的子串的起始位置
+
+3）replace
+    a、定义和用法
+    replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+    b、语法
+    str.replace(regexp|substr, newSubStr|function)
+    请注意，如果第一个参数是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象
+    第二个参数若为函数，当匹配执行后，函数就会执行，函数的返回值作为替换字符串，另外需要注意的是，如果第一个参数为正则表达式，并且全局匹配，那么这个函数会被多次调用
+    c、返回值
+    一个部分或全部匹配由替代模式所取代的新的字符串。该方法并不改变调用它的字符串本身，而只是返回一个新的替换后的字符串。在进行全局的搜索替换时，正则表达式需包含 g 标志。
+
+4）split
+    a、定义和用法
+    split() 方法用于把一个字符串分割成字符串数组。
+    b、语法
+    stringObject.split(separator, limit)
+    separator 可以是一个字符串或正则表达式， limit, 一个整数，限定返回的分割片段数量,该参数可指定返回的数组的最大长度。如果设置了该参数，返回的子串不会多于这个参数指定的数组。如果没有设置该参数，整个字符串都会被分割，不考虑它的长度。
+    c、返回值
+    返回源字符串以分隔符出现位置分隔而成的一个 array
+
+5、exec()
+    a、定义和用法
+    exec()方法在一个指定字符串中执行一个搜索匹配。返回一个结果数组或null
+    b、语法
+    regexObj.exec(str)
+    当正则表达式使用 “g” 标志时，可以多次执行 exec 方法来查找同一个字符串中的成功匹配。当你这样做时，查找将从正则表达式的 lastIndex 属性指定的位置开始。
+    c、返回值
+    如果匹配成功，exec() 方法返回一个数组，并更新正则表达式对象的属性。返回的数组将完全匹配成功的文本作为第一项，将正则括号里匹配成功的作为数组填充到后面。如果匹配失败，exec() 方法返回null。
+
+6、test()
+    a、定义和用法
+    test() 方法执行一个检索，用来查看正则表达式与指定的字符串是否匹配。返回 true 或 false。
+    b、语法
+    regexObj.test(str)
+    调用 RegExp 对象 r 的 test() 方法，并为它传递字符串 s，与这个表示式是等价的：(r.exec(s) != null)。
+    c、返回值
+    如果字符串 string 中含有与 RegExpObject 匹配的文本，则返回 true，否则返回 false。</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/12/regular/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/06/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-06T02:10:29.084Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/06/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
+  <div id="SOHUCS" sid="regular" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "hcl",
+        conf: "hcl"
+    });
+</script>
+</script>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -237,8 +537,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
